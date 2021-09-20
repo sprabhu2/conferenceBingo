@@ -6,3 +6,10 @@
 .actions {
 	margin-bottom: 20px ;
 }
+
+.header{
+	min-height: 50px;
+	background-color:paleturquoise;
+	text-align: center;
+
+}

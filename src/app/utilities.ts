@@ -20,7 +20,7 @@ export class Utilities {
 		return( collection );
 	}
 
-	// I select a random integer from the given range, inclusive.
+	// Functions to pick random integer from the given range, inclusive.
 	static randRange( min: number, max: number ) : number {
 		return( min + Math.floor( ( max - min + 1 ) * Math.random() ) );	
 	}

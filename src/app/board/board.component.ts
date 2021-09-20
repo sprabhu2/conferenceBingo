@@ -87,6 +87,7 @@ export class BoardComponent {
 	}
 
 	public surprise(): void {
+
 		const canvas = this.renderer2.createElement('canvas');
 		this.renderer2.appendChild(this.elementRef.nativeElement, canvas);
 		const myConfetti = confetti.create(canvas, {
@@ -106,8 +107,9 @@ export class BoardComponent {
 
 		setTimeout(() => {
 			myConfetti.reset();
+			this.renderer2.removeChild(this.elementRef.nativeElement, canvas);
 			this.winner = false;
-		}, 3000);
+		}, 10000);
 	}
 
 }
